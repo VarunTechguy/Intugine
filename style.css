@@ -1,0 +1,373 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+body{
+    min-height: 200vh;
+    height: 70%;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 80px;
+    z-index: 100000;   
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+}
+
+header.sticky{
+    padding:5px 100px;
+    background: #fff;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.15)
+
+}
+
+header .Logo{
+    position: absolute;
+    left:160px;
+    font-weight: 700;
+    /* color: rgb(16, 134, 245); */
+    text-decoration: none;
+    font-size: 110%;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    
+}
+header .ig{
+    width: 50px;
+    
+    height: 50px;
+    background-image: url(./assets123/profile.svg);
+    background-repeat: no-repeat;
+    background-position: 11px 11px;
+    bottom: -6px;
+    left: -15px;
+    cursor: pointer;
+    /* background-size: 50%; */
+    /* opacity: 0.9; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* margin: 0 auto; */
+    transition: all 1s 0.2s ease;
+    background-color: grey;
+    border-radius: 80%;
+}
+.move{
+    top:-8px;
+}
+header .arrow{
+    width: 30px;
+    height: 30px;
+    left:-10px;
+    padding: 10px;
+    position: relative;
+    background-image: url('down-chevron.svg');
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border:1px solid#fff;
+    bottom: -19px;
+}
+
+.right-menu{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+/* Further Dev Drop down */
+/* .dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(16, 134, 245);
+    min-width:158px;
+    z-index: 1;
+}
+.dropdown-menu a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.right-menu:hover .dropdown-menu{
+    display: block;
+}
+.right-menu:hover .arrow{
+    background-color: transparent;
+} */
+
+
+
+section p{
+    color: red;
+    position: relative;
+    text-align: center;
+    
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+header li{
+    display: inline-block;
+}
+header ul li{
+    padding: 2px;
+}
+header ul li{
+    position: relative;
+}
+header ul li a:hover{
+    color: royalblue;
+    /* background-color: rgba(0,0,0,0.1); */
+    transition: all ease-in-out 0.3s;
+    
+}
+/* CUSTION */
+/* header ul li a */
+header ul li a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  /* header li:not */
+  header li:not(:last-child) {
+    margin-right: 20px;
+  }
+  /* header ul li a */
+  header ul li a {
+    display: block;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  /* .target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px); */
+  /* } */
+  /* header ul li a,taget */
+  header ul li a,
+  .target {
+    transition: all .35s ease-in-out;
+  }
+/* END CUSTION */
+
+/* CARDS */
+.center
+{
+  height:50vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HERE MAIN CARDS */
+* {
+  transition: all 0.3s ease-out;
+}
+
+html,body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  position:relative;
+  top:-30px;
+  left:-20px;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+}
+p .small {
+    font-size: 27px;
+    position:relative;
+    left:17px;
+    top:20px;
+  }
+
+
+
+
+
+.card1 {
+  display: block;
+  position: relative;
+  max-width: 362px;
+  background-color: #f2f8f9;
+  border-radius: 14px;
+  padding: 38px 45px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+
+ .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #297fcf;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  .card1:hover:before {
+    transform: scale(21);
+  }
+
+.card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+}
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }  
+
+
+/* MAIN VIEW */
+.section-cls{
+    display: flex;
+    flex-direction: row;
+}
+
+  /* TIMELINE VIEW */
+div.timeline-view{
+    border:1px solid lightblue;
+    position: relative;
+    font-weight: 900;
+}
+.timeline-view p{
+    color:white;
+}
+
+
+/* TABLE STYLING */
+
+/* 
+.tlb tr,th{
+    border:2px solid black;
+    padding:7px;
+
+
+}  */
+
+
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
+* {
+  font-family: sans-serif; /* Change your font family */
+}
+
+.table-sortable {
+  border-collapse: collapse;
+  margin: 25px 0;
+  position: relative;
+  left:100px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-sortable thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-sortable th,
+.table-sortable td {
+  padding: 12px 15px;
+}
+
+.table-sortable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-sortablee tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table-sortable tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+
+
+
+
+
+
+  /* SAMPLE
+
+
+  
